@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+body{
+    background-color: #f1f6ff;
+    font-family: 'Poppins', sans-serif;
+  }
+  #news-slider{
+      margin-top: 80px;
+      
+  }
+  .my-carousel{
+      margin: 30px;
+      
+  }
+
+  .heading{
+      position: absolute;
+      top:4%;
+      padding-left: 16px;
+  }
+  .heading .btncolor{
+      background-color: rgb(218, 27, 27) ;
+      color: #fff;
+  }
+  .heading span{
+      font-size: 22px;
+      font-weight: 800;
+  }
+
+  .grow{
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  .grow:hover{
+   transform: scale(1.05);
+  }
+
+  .pcolor{
+font-weight: 600;
+margin-bottom: 30px;
+  }
+  
+  .post-slide{
+      background: #fff;
+      margin: 20px 15px 20px;
+      border-radius: 15px;
+      padding-top: 1px;
+      box-shadow: 0px 14px 22px -9px #bbcbd8;
+  }
+  .post-line{
+    background-image: -webkit-gradient(linear, 100% 0%, 0% 0%, to(rgb(83, 127, 255)), color-stop(-0.03, rgb(30, 38, 194)));
+    height: 46px;
+}
+  .post-line p span{
+   padding-right: 7px;
+   }
+  .post-line p{
+    font-size:18px;
+    font-weight:600;
+    padding: 13px 20px 40px;
+    color:rgb(241, 238, 238);
+    display: inline-block;
+    
+  }
+  .post-slide .post-img{
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px 10px 0px 0px;
+     
+      
+  }
+  .post-slide .post-img img{
+      width: 100%;
+      
+      height: auto;
+    
+    
+  }
+  
+ 
+  .post-slide .post-content{
+      background:#fff;
+      padding: 2px 20px 40px;
+      border-radius: 0px 0px 15px 15px;
+  }
+  .post-slide .post-title {
+      font-size:19px;
+      font-weight:700;
+      color:rgba(0, 0, 0, 0.781);
+      padding: 12px;
+      margin-bottom: 25px;
+      
+  }
+ 
+  .post-slide .post-description{
+      line-height:18px;
+      color:#808080;
+      margin-bottom:20px;
+  }
+  .post-slide .post-description p{
+    padding-left: 12px;
+    color:#808080;
+    margin-bottom:20px;
+}
+  .post-slide .post-date{
+      color:#808080;
+      font-size: 16px;
+  }
+  .post-slide .post-date i{
+      font-size:16px;
+     
+      color: #CFDACE;
+  }
+  .post-slide .notes{
+     
+      float: right;
+      font-size: 16px;
+      padding-right: 12px;
+      color:#808080;
+     
+  }
+ 
+  .owl-controls .owl-buttons{
+      text-align:center;
+      margin-top:20px;
+  }
+  .owl-controls .owl-buttons .owl-prev{
+      background: rgb(187, 185, 185);
+      position: absolute;
+      top:-11%;
+      right:150px;
+      padding: 8px 20px 10px 20px;
+      border-radius: 5px;
+      box-shadow: 3px 14px 25px -10px #92b4d0;
+      transition: background 0.5s ease 0s;
+  }
+  .owl-controls .owl-buttons .owl-next{
+      background: rgb(187, 185, 185);;
+      position: absolute;
+      top:-11%;
+      right: 65px;
+      padding: 8px 20px 10px 20px;
+      border-radius: 5px;
+      box-shadow: -3px 14px 25px -10px #92b4d0;
+      transition: background 0.5s ease 0s;
+  }
+  .owl-controls .owl-buttons .owl-prev:after,
+  .owl-controls .owl-buttons .owl-next:after{
+    
+
+    font-family: "Font Awesome 5 Free";
+        content: "\f104";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
+        color: #fff;
+        font-size: 16px;
+  }
+  .owl-controls .owl-buttons .owl-next:after{
+      content:"\f105";
+  }
+  @media only screen and (max-width:1025px) {
+      .post-slide .post-content{
+          padding: 0px 15px 25px 15px;
+      }
+  
+  .post-slide .notes{
+      
+    float:left;
+    margin-top: 15px;
+    padding-left: 11px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 10px;
+    color:#808080;
+    display: block;
+   
+}
+ 
+}
+
+@media only screen and (max-width:800px) {
+    .post-slide .post-content{
+        padding: 0px 15px 25px 15px;
+    }
+   
+ 
+    
+    .my-carousel{
+        margin: 10px;
+        
+    }
+    .heading span{
+      display: none;
+    }
+    .post-slide .post-title {
+        font-size:18px;
+        font-weight:700;
+        margin-bottom: 20px;
+        
+    }
+
+    .post-slide .post-date{
+       display: block;
+    }
+
+    .post-line p{
+        font-size:16px;
+        font-weight: 600;
+      }
+
+      .post-slide .notes{
+      
+        float:left;
+        margin-top: 15px;
+        padding-left: 11px;
+        margin-bottom: 25px;
+        font-size: 16px;
+        line-height: 10px;
+        color:#808080;
+        display: block;
+       
+    }
+
+    .owl-controls .owl-buttons .owl-prev{
+      
+        right:0px;
+        
+    }
+    .owl-controls .owl-buttons .owl-prev{
+        
+        right:0px;
+       
+    }
+}
+
+@media only screen and (max-width:600px) {
+  
+    .heading span{
+      display: none;
+    }
+    
+}
